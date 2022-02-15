@@ -1,6 +1,7 @@
 Первое ДЗ 
 Linux terminal (GitBash) commands
 
+
 1) Посмотреть где я === pwd				
 2) Создать папку === mkdir qa
 3) Зайти в папку === cd qa
