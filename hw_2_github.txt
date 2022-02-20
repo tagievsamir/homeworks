@@ -92,3 +92,38 @@ TXT
 				2.Result - lines of text overlap (mobile only);
  17. Сделать Commit changes (сохранить) изменения на веб интерфейсе === нажать кнопку "Commit changes";
  18. Синхронизировать внешний и локальный репозиторий TXT === в GitBash ввести "git pull".
+
+JSON
+ {
+	"1.Создать внешний репозиторий c названием TXT":
+		[
+			"1)зайти в свой аккаунт GitHub",
+			"2)во вкладке Repositories нажать кнопку New",
+    		"3)в строке Repository name написать TXT",
+			"4)нажать кнопку Create repository"
+		],	
+       "2. Клонировать репозиторий TXT на локальный компьютер": "в GitBash ввести git clone + URL созданного репозитория",
+       "3. Внутри локального TXT создать файл new.txt":
+		[
+			"1)cd TXT",
+			"2)touch new.txt"
+		],
+	"4. Добавить файл под гит": "git add new.txt",
+	"5. Закоммитить файл": "git commit -m new.txt",
+	"6. Отправить файл на внешний GitHub репозиторий": "git push",
+	"7. Отредактировать содержание файла new.txt - написать информацию о себе (ФИО, возраст, количество домашних животных, будущая желаемая зарплата). 
+	 Всё написать в формате TXT":
+		[
+			"1)vim new.txt",
+			"2)insert",
+			    {"2.1)":
+				    [
+					"1.surname-Tagiev,name-Samir,patronymic-Nazimovich",
+					"2.age-35",
+					"3.pet-0",
+					"4.future_desired_salary-1kk"
+				    ]
+			    },
+			"3)esc",
+			"4):wq"
+		],
