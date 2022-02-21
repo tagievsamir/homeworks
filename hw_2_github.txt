@@ -111,8 +111,7 @@ JSON
 	"4. Добавить файл под гит": "git add new.txt",
 	"5. Закоммитить файл": "git commit -m new.txt",
 	"6. Отправить файл на внешний GitHub репозиторий": "git push",
-	"7. Отредактировать содержание файла new.txt - написать информацию о себе (ФИО, возраст, количество домашних животных, будущая желаемая зарплата). 
-	    Всё написать в формате TXT":
+	"7. Отредактировать содержание файла new.txt - написать информацию о себе (ФИО, возраст,количество домашних животных, будущая желаемая зарплата).Hаписать в формате TXT":
 		[
 			"1)vim new.txt",
 			"2)insert",
@@ -134,7 +133,7 @@ JSON
 			"2)git push"
 	    	],
   	"9. Создать файл preferences.txt": "vim preferences.txt",
- 	"10. В файл preferences.txt добавить информацию о своих предпочтениях (Любимый фильм, любимый сериал, любимая еда, любимое время года, сторона которую хотели бы 	 	      посетить) в формате TXT":
+ 	"10. В файл preferences.txt добавить информацию о своих предпочтениях (Любимый фильм, любимый сериал, любимая еда, любимое время года, страна) в формате TXT":
        	    	[
 	      		{
 		    		"1)insert":
@@ -187,6 +186,45 @@ JSON
 			"3)esc",
 		    	"4):wq"
 		],
+	"12. Сделать коммит в одну строку": "git add . && git commit -m add 2 files",
+    	"13. Отправить сразу 2 файла на внешний репозиторий": "git push",
+    	"14. На веб интерфейсе создать файл bug_report.txt":
+ 		[
+                	"1)зайти в свой аккаунт GitHub",
+			"2)во вкладке Repositories зайти в репозиторий TXT",
+			"3)нажать кнопку Add file",
+			"4)выбрать Create new file",
+			"5)в окне Name your file написать bug_report.txt"
+		],
+	"15. Сделать Commit changes (сохранить) изменения на веб интерфейсе": "нажать кнопку Commit new file",
+ 	"16. На веб интерфейсе модифицировать файл bug_report.txt, добавить баг репорт в формате TXT":
+		"1)зайти в файл bug_report.txt",
+		"2)нажать кнопку Edit this file":
+           		{
+			     "Created Date":"18.02.2022",
+			     "Author":"Tagiev S.N.",
+			     "Project":"ksendzov.com",
+			     "Summary":"lines of text overlap (mobile only)",
+			     "Component":"course program points",
+			     "Severity":"minor",
+			     "Priority":"trivial",
+			     "Status":"new",
+			     "Incident Type":"bug",
+			     "Category":"text",
+			     "Environment":"Android version - 11;Chrome version - 97.0.4692.98",
+			     "Description":
+                		{		     
+					"1.Steps to reproduse":
+				 		[
+						 "1.Open ksendzov.com",
+						 "2.Go to point 26 of the course program"
+				 		],
+					"2.Result":"lines of text overlap (mobile only)"
+                		}
+           		},
+    "17. Сделать Commit changes (сохранить) изменения на веб интерфейсе":"нажать кнопку Commit changes",
+    "18. Синхронизировать внешний и локальный репозиторий TXT":"GitBash ввести git pull"
+}    
 
 
 
