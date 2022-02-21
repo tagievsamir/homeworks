@@ -226,5 +226,104 @@ JSON
     "18. Синхронизировать внешний и локальный репозиторий TXT":"GitBash ввести git pull"
 }    
 
+XML
+
+<?xml version="1.0" encoding="UTF-8" ?>
+<root>
+	<1.Создать внешний репозиторий c названием TXT>1)зайти в свой аккаунт GitHub</1.Создать внешний репозиторий c названием TXT>
+	<1.Создать внешний репозиторий c названием TXT>2)во вкладке Repositories нажать кнопку New</1.Создать внешний репозиторий c названием TXT>
+	<1.Создать внешний репозиторий c названием TXT>3)в строке Repository name написать TXT</1.Создать внешний репозиторий c названием TXT>
+	<1.Создать внешний репозиторий c названием TXT>4)нажать кнопку Create repository</1.Создать внешний репозиторий c названием TXT>
+	<2. Клонировать репозиторий TXT на локальный компьютер>в GitBash ввести git clone + URL созданного репозитория</2. Клонировать репозиторий TXT на локальный компьютер>
+	<3. Внутри локального TXT создать файл new.txt>1)cd TXT</3. Внутри локального TXT создать файл new.txt>
+	<3. Внутри локального TXT создать файл new.txt>2)touch new.txt</3. Внутри локального TXT создать файл new.txt>
+	<4. Добавить файл под гит>git add new.txt</4. Добавить файл под гит>
+	<5. Закоммитить файл>git commit -m new.txt</5. Закоммитить файл>
+	<6. Отправить файл на внешний GitHub репозиторий>git push</6. Отправить файл на внешний GitHub репозиторий>
+	<7. Отредактировать содержание файла new.txt - написать информацию о себе (ФИО, возраст,количество домашних животных, будущая желаемая зарплата).Hаписать в формате TXT>1)vim new.txt</7. Отредактировать содержание файла new.txt - написать информацию о себе (ФИО, возраст,количество домашних животных, будущая желаемая зарплата).Hаписать в формате TXT>
+	<7. Отредактировать содержание файла new.txt - написать информацию о себе (ФИО, возраст,количество домашних животных, будущая желаемая зарплата).Hаписать в формате TXT>2)insert</7. Отредактировать содержание файла new.txt - написать информацию о себе (ФИО, возраст,количество домашних животных, будущая желаемая зарплата).Hаписать в формате TXT>
+	<7. Отредактировать содержание файла new.txt - написать информацию о себе (ФИО, возраст,количество домашних животных, будущая желаемая зарплата).Hаписать в формате TXT>
+		<2.1)>1.surname-Tagiev,name-Samir,patronymic-Nazimovich</2.1)>
+		<2.1)>2.age-35</2.1)>
+		<2.1)>3.pet-0</2.1)>
+		<2.1)>4.future_desired_salary-1kk</2.1)>
+	</7. Отредактировать содержание файла new.txt - написать информацию о себе (ФИО, возраст,количество домашних животных, будущая желаемая зарплата).Hаписать в формате TXT>
+	<7. Отредактировать содержание файла new.txt - написать информацию о себе (ФИО, возраст,количество домашних животных, будущая желаемая зарплата).Hаписать в формате TXT>3)esc</7. Отредактировать содержание файла new.txt - написать информацию о себе (ФИО, возраст,количество домашних животных, будущая желаемая зарплата).Hаписать в формате TXT>
+	<7. Отредактировать содержание файла new.txt - написать информацию о себе (ФИО, возраст,количество домашних животных, будущая желаемая зарплата).Hаписать в формате TXT>4):wq</7. Отредактировать содержание файла new.txt - написать информацию о себе (ФИО, возраст,количество домашних животных, будущая желаемая зарплата).Hаписать в формате TXT>
+	<8. Отправить изменения на внешний репозиторий>1)git commit -am editing</8. Отправить изменения на внешний репозиторий>
+	<8. Отправить изменения на внешний репозиторий>2)git push</8. Отправить изменения на внешний репозиторий>
+	<9. Создать файл preferences.txt>vim preferences.txt</9. Создать файл preferences.txt>
+	<10. В файл preferences.txt добавить информацию о своих предпочтениях (Любимый фильм, любимый сериал, любимая еда, любимое время года, страна) в формате TXT>
+		<1)insert>1.favorite_movie-Kin-dza-dza</1)insert>
+		<1)insert>2.favorite_serial-Friends</1)insert>
+		<1)insert>3.favorite_meal-meat</1)insert>
+		<1)insert>4.favorite_time_of_the_year-Summer</1)insert>
+		<1)insert>5.the_country_I_would_like_to_visit-New_Zealand</1)insert>
+	</10. В файл preferences.txt добавить информацию о своих предпочтениях (Любимый фильм, любимый сериал, любимая еда, любимое время года, страна) в формате TXT>
+	<10. В файл preferences.txt добавить информацию о своих предпочтениях (Любимый фильм, любимый сериал, любимая еда, любимое время года, страна) в формате TXT>2)esc</10. В файл preferences.txt добавить информацию о своих предпочтениях (Любимый фильм, любимый сериал, любимая еда, любимое время года, страна) в формате TXT>
+	<10. В файл preferences.txt добавить информацию о своих предпочтениях (Любимый фильм, любимый сериал, любимая еда, любимое время года, страна) в формате TXT>3):wq</10. В файл preferences.txt добавить информацию о своих предпочтениях (Любимый фильм, любимый сериал, любимая еда, любимое время года, страна) в формате TXT>
+	<11. Создать файл sklls.txt добавить информацию о скиллах которые будут изучены на курсе в формате TXT>1)vim sklls.txt</11. Создать файл sklls.txt добавить информацию о скиллах которые будут изучены на курсе в формате TXT>
+	<11. Создать файл sklls.txt добавить информацию о скиллах которые будут изучены на курсе в формате TXT>
+		<2)insert>1. Basic theory (What is testing, bug reports, documentation, types, methods, testing areas, etc.) SDLC, STLC</2)insert>
+		<2)insert>2. What is a client-server architecture</2)insert>
+		<2)insert>3. HTTP Methods of requests to the server</2)insert>
+		<2)insert>4. HTTP server response codes</2)insert>
+		<2)insert>5. Structures of HTTP requests and responses</2)insert>
+		<2)insert>6. What is JSON, XML. Their structure</2)insert>
+		<2)insert>7. API testing via Postman (JS, API autotests)</2)insert>
+		<2)insert>8. Removing and reading logs from an external server</2)insert>
+		<2)insert>9. Sniffing http web traffic via Charles and Fiddler</2)insert>
+		<2)insert>10. Dev Tools of web browsers (Google Chrome, FireFox)</2)insert>
+		<2)insert>11. VPN. (How it works, why you need it, how to use it, tool options)</2)insert>
+		<2)insert>12. Mobile testing</2)insert>
+		<2)insert>13. Feature iOS, Android, guidelines</2)insert>
+		<2)insert>14. Building iOS applications on XCode. (Those who do not have a Mac computer, just look)</2)insert>
+		<2)insert>15. Building Android applications on Android Studio</2)insert>
+		<2)insert>16. ADB (android device management)</2)insert>
+		<2)insert>17. Setting up proxy and vpn on iOS and Android</2)insert>
+		<2)insert>18. Interception (sniffing) of mobile traffic via Charles and Fiddler on iOS and Android</2)insert>
+		<2)insert>19. Command line (terminal) Linux (copying, creating, viewing, moving files on servers without a graphical interface)</2)insert>
+		<2)insert>20. Basics of bash scripting, automation of routine tasks on the server</2)insert>
+		<2)insert>21. Access to remote servers</2)insert>
+		<2)insert>22. SQL basics (Create, Delete, Drop, Insert Into, Select, From, Where, Join)</2)insert>
+		<2)insert>23. Postgres database (installation, configuration and use)</2)insert>
+		<2)insert>24. Non-relational database Redis (installation, configuration and use)</2)insert>
+		<2)insert>25. Load testing in Jmeter</2)insert>
+		<2)insert>26. Scrum development methodology</2)insert>
+		<2)insert>27. Python. (Learning the basics. Creating a client-server application)</2)insert>
+	</11. Создать файл sklls.txt добавить информацию о скиллах которые будут изучены на курсе в формате TXT>
+	<11. Создать файл sklls.txt добавить информацию о скиллах которые будут изучены на курсе в формате TXT>3)esc</11. Создать файл sklls.txt добавить информацию о скиллах которые будут изучены на курсе в формате TXT>
+	<11. Создать файл sklls.txt добавить информацию о скиллах которые будут изучены на курсе в формате TXT>4):wq</11. Создать файл sklls.txt добавить информацию о скиллах которые будут изучены на курсе в формате TXT>
+	<12. Сделать коммит в одну строку>git add . && git commit -m add 2 files</12. Сделать коммит в одну строку>
+	<13. Отправить сразу 2 файла на внешний репозиторий>git push</13. Отправить сразу 2 файла на внешний репозиторий>
+	<14. На веб интерфейсе создать файл bug_report.txt>1)зайти в свой аккаунт GitHub</14. На веб интерфейсе создать файл bug_report.txt>
+	<14. На веб интерфейсе создать файл bug_report.txt>2)во вкладке Repositories зайти в репозиторий TXT</14. На веб интерфейсе создать файл bug_report.txt>
+	<14. На веб интерфейсе создать файл bug_report.txt>3)нажать кнопку Add file</14. На веб интерфейсе создать файл bug_report.txt>
+	<14. На веб интерфейсе создать файл bug_report.txt>4)выбрать Create new file</14. На веб интерфейсе создать файл bug_report.txt>
+	<14. На веб интерфейсе создать файл bug_report.txt>5)в окне Name your file написать bug_report.txt</14. На веб интерфейсе создать файл bug_report.txt>
+	<15. Сделать Commit changes (сохранить) изменения на веб интерфейсе>нажать кнопку Commit new file</15. Сделать Commit changes (сохранить) изменения на веб интерфейсе>
+	<16. На веб интерфейсе модифицировать файл bug_report.txt, добавить баг репорт в формате TXT>1)зайти в файл bug_report.txt</16. На веб интерфейсе модифицировать файл bug_report.txt, добавить баг репорт в формате TXT>
+	<2)нажать кнопку Edit this file>
+		<Created Date>18.02.2022</Created Date>
+		<Author>Tagiev S.N.</Author>
+		<Project>ksendzov.com</Project>
+		<Summary>lines of text overlap (mobile only)</Summary>
+		<Component>course program points</Component>
+		<Severity>minor</Severity>
+		<Priority>trivial</Priority>
+		<Status>new</Status>
+		<Incident Type>bug</Incident Type>
+		<Category>text</Category>
+		<Environment>Android version - 11;Chrome version - 97.0.4692.98</Environment>
+		<Description>
+			<1.Steps to reproduse>1.Open ksendzov.com</1.Steps to reproduse>
+			<1.Steps to reproduse>2.Go to point 26 of the course program</1.Steps to reproduse>
+			<2.Result>lines of text overlap (mobile only)</2.Result>
+		</Description>
+	</2)нажать кнопку Edit this file>
+	<17. Сделать Commit changes (сохранить) изменения на веб интерфейсе>нажать кнопку Commit changes</17. Сделать Commit changes (сохранить) изменения на веб интерфейсе>
+	<18. Синхронизировать внешний и локальный репозиторий TXT>GitBash ввести git pull</18. Синхронизировать внешний и локальный репозиторий TXT>
+</root>
+
 
 
