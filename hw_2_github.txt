@@ -203,6 +203,103 @@ JSON
 17. Сделать Commit changes (сохранить) изменения на веб интерфейсе === нажать кнопку "Commit changes";
 18. Синхронизировать внешний и локальный репозиторий JSON === в GitBash ввести "git pull".
 
+XML
 
-
-
+1.Создать внешний репозиторий c названием XML === 1)зайти в свой аккаунт GitHub;
+						     2)во вкладке "Repositories" нажать кнопку "New";
+    						     3)в строке "Repository name" написать "XML";
+						     4)нажать кнопку "Create repository;
+2.Клонировать репозиторий XML на локальный компьютер === в GitBash ввести "git clone" + URL созданного репозитория;
+3.Внутри локального XML создать файл “new.xml” === 1)cd XML;
+						     2)touch new.xml;		]
+4.Добавить файл под гит === git add new.xml;
+5.Закоммитить файл === git commit -m "new.xml";
+6.Отправить файл на внешний GitHub репозиторий === git push;
+7.Отредактировать содержание файла “new.xml” - написать информацию о себе (ФИО, возраст, количество домашних животных, будущая желаемая зарплата). Всё написать в формате XML ===
+=== vim new.xml
+	<?xml version="1.0"?>
+	<test>
+	<fio>
+	<surname>Tagiev</surname>
+	<name>Samir</name>
+	<patronymic>Nazimovich</patronymic>
+	</fio>
+	<age>35</age>
+	<pet>0</pet>
+	<salary>1kk</salary>
+	</test>
+8.Отправить изменения на внешний репозиторий === 1)git commit -am "xml";
+						   2)git push;
+9.Создать файл preferences.xml === vim preferences.xml;
+10.В файл preferences.xml добавить информацию о своих предпочтениях (Любимый фильм, любимый сериал, любимая еда, любимое время года, сторона которую хотели бы посетить) в формате XML ===
+=== <?xml version="1.0"?>
+	<favorite>
+	<movie>Kin-dza-dza</movie>
+	<serial>Friends</serial>
+	<meal>meat</meal>
+	<time_of_the_year>Summer</time_of_the_year>
+	<country>New_Zealand</country>
+	</favorite>
+11.Cоздать файл skills.xml добавить информацию о скиллах которые будут изучены на курсе в формате XML ===
+=== vim skills.xml
+	<?xml version="1.0"?>
+	<skills>
+	<theory>testing,bug_reports,documentation,types,methods,testing_areas,SDLC,STLC</theory>
+	<theory>client-server_architecture</theory>
+	<http>Methods_of_requests_to_the_server</http>
+	<http>server_response_codes</http>
+	<http>Structures of HTTP requests and responses</http>
+	<structure>JSON,XML</structure>
+	<tests>API_testing_via_postman_(JS,API_autotests)</tests>
+	<sniffing>Charles,Fiddler</sniffing>
+	<devtools>Google_Chrome,FireFox</devtools>
+	<vpn>work,use,tool_options</vpn>
+	<mobile>Feature_iOS,Android,guidelines</mobile>
+	<mobile>Building_iOS_applications_on_XCode</mobile>
+	<mobile>Building_Android_applications_on_Android_Studio</mobile>
+	<mobile>ADB(android device management)</mobile>
+	<mobile>Setting_up_proxy_and_vpn_on_iOS_and_Android</mobile>
+	<mobile>sniffing_Charles_and_Fiddler_on_iOS_and_Android</mobile>
+	<terminal>copying,creating,viewing,moving</terminal>
+	<sql>Create, Delete, Drop, Insert Into, Select, From, Where, Join</sql>
+	<postgres>installation,configuration,use</postgres>
+	<redis>installation,configuration,use</redis>
+	<jmeter>Load testing</jmeter>
+	<scrum>development_methodology</scrum>
+	<python>Learning_the_basics.Creating_a_client-server_application</python>
+	</skills>
+12.Cделать коммит в одну строку === git add . && git commit -m "new";
+13.Отправить сразу 2 файла на внешний репозиторий === git push;
+14.На веб интерфейсе создать файл bug_report.xml === 1)зайти в свой аккаунт GitHub;
+						       2)во вкладке "Repositories" зайти в репозиторий "XML";
+					       	       3)нажать кнопку "Add file";
+					               4)выбрать "Create new file";
+						       5)в окне "Name your file" написать "bug_report.xml";
+15.Сделать Commit changes (сохранить) изменения на веб интерфейсе === нажать кнопку "Commit new file";
+16.На веб интерфейсе модифицировать файл bug_report.xml, добавить баг репорт в формате XML ===
+=== 1)зайти в файл bug_report.xml;
+		2)нажать кнопку "Edit this file";
+	<?xml version="1.0"?>
+	<structure>
+	<created_date>18.02.2022</created_date>
+	<author>Tagiev_S.N.</author>
+	<project>ksendzov.com</project>
+	<summary>lines_of_text_overlap_(mobile only)</summary>
+	<component>course_program_points</component>
+	<severity>minor</severity>
+	<priority>trivial</priority>
+	<status>new</status>
+	<incident_type>bug</incident_type>
+	<category>text</category>
+	<environment>
+	<android_version>11</android_version>
+	<chrome_version>97.0.4692.98</chrome_version>
+	</environment>
+	<description>
+	<steps_to_reproduse>Open_ksendzov.com</steps_to_reproduse>
+	<steps_to_reproduse>Go_to_point_26_of_the_course_program</steps_to_reproduse>
+	<result>lines_of_text_overlap_(mobile only)</result>
+	</description>
+	</structure>
+17.Сделать Commit changes (сохранить) изменения на веб интерфейсе === нажать кнопку "Commit changes";
+18.Синхронизировать внешний и локальный репозиторий XML === в GitBash ввести "git pull".
