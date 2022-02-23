@@ -205,12 +205,12 @@ JSON
 
 XML
 
-1.Создать внешний репозиторий c названием XML === 1)зайти в свой аккаунт GitHub;
+1.Создать внешний репозиторий c названием XML ===    1)зайти в свой аккаунт GitHub;
 						     2)во вкладке "Repositories" нажать кнопку "New";
     						     3)в строке "Repository name" написать "XML";
 						     4)нажать кнопку "Create repository;
 2.Клонировать репозиторий XML на локальный компьютер === в GitBash ввести "git clone" + URL созданного репозитория;
-3.Внутри локального XML создать файл “new.xml” === 1)cd XML;
+3.Внутри локального XML создать файл “new.xml” ===   1)cd XML;
 						     2)touch new.xml;		]
 4.Добавить файл под гит === git add new.xml;
 5.Закоммитить файл === git commit -m "new.xml";
@@ -228,18 +228,17 @@ XML
 	<pet>0</pet>
 	<salary>1kk</salary>
 	</test>
-8.Отправить изменения на внешний репозиторий === 1)git commit -am "xml";
+8.Отправить изменения на внешний репозиторий ===   1)git commit -am "xml";
 						   2)git push;
 9.Создать файл preferences.xml === vim preferences.xml;
-10.В файл preferences.xml добавить информацию о своих предпочтениях (Любимый фильм, любимый сериал, любимая еда, любимое время года, сторона которую хотели бы посетить) в формате XML ===
-=== <?xml version="1.0"?>
-	<favorite>
-	<movie>Kin-dza-dza</movie>
-	<serial>Friends</serial>
-	<meal>meat</meal>
-	<time_of_the_year>Summer</time_of_the_year>
-	<country>New_Zealand</country>
-	</favorite>
+10.В файл preferences.xml добавить информацию о своих предпочтениях (Любимый фильм, любимый сериал, любимая еда, любимое время года, сторона которую хотели бы посетить) в формате XML === <?xml version="1.0"?>
+		<favorite>
+		<movie>Kin-dza-dza</movie>
+		<serial>Friends</serial>
+		<meal>meat</meal>
+		<time_of_the_year>Summer</time_of_the_year>
+		<country>New_Zealand</country>
+		</favorite>
 11.Cоздать файл skills.xml добавить информацию о скиллах которые будут изучены на курсе в формате XML ===
 === vim skills.xml
 	<?xml version="1.0"?>
@@ -270,7 +269,7 @@ XML
 	</skills>
 12.Cделать коммит в одну строку === git add . && git commit -m "new";
 13.Отправить сразу 2 файла на внешний репозиторий === git push;
-14.На веб интерфейсе создать файл bug_report.xml === 1)зайти в свой аккаунт GitHub;
+14.На веб интерфейсе создать файл bug_report.xml ===   1)зайти в свой аккаунт GitHub;
 						       2)во вкладке "Repositories" зайти в репозиторий "XML";
 					       	       3)нажать кнопку "Add file";
 					               4)выбрать "Create new file";
@@ -278,7 +277,7 @@ XML
 15.Сделать Commit changes (сохранить) изменения на веб интерфейсе === нажать кнопку "Commit new file";
 16.На веб интерфейсе модифицировать файл bug_report.xml, добавить баг репорт в формате XML ===
 === 1)зайти в файл bug_report.xml;
-		2)нажать кнопку "Edit this file";
+    2)нажать кнопку "Edit this file";
 	<?xml version="1.0"?>
 	<structure>
 	<created_date>18.02.2022</created_date>
