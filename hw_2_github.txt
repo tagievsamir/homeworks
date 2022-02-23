@@ -21,7 +21,7 @@ TXT
  8. Отправить изменения на внешний репозиторий === 1)git commit -am "editing";
 						   2)git push;
  9. Создать файл preferences.txt === vim preferences.txt;
- 10. В файл preferences.txt” добавить информацию о своих предпочтениях (Любимый фильм, любимый сериал, любимая еда, любимое время года, сторона которую хотели бы посетить) в формате TXT ===
+ 10. В файл preferences.txt добавить информацию о своих предпочтениях (Любимый фильм, любимый сериал, любимая еда, любимое время года, страна которую хотели бы посетить) в формате TXT ===
 		1)insert;
 		 1.1)1.favorite_movie-"Kin-dza-dza";
 		     2.favorite_serial-"Friends";
@@ -30,8 +30,8 @@ TXT
 		     5.the_country_I_would_like_to_visit-New_Zealand;
 		3)esc;
 		4):wq;	
- 11. Создать файл sklls.txt добавить информацию о скиллах которые будут изучены на курсе в формате TXT ===
-		1)vim sklls.txt;
+ 11. Создать файл skills.txt добавить информацию о скиллах которые будут изучены на курсе в формате TXT ===
+		1)vim skills.txt;
 		2)insert;
 		 2.1)1. Basic theory (What is testing, bug reports, documentation, types, methods, testing areas, etc.) SDLC, STLC;
 		     2. What is a client-server architecture;
@@ -92,3 +92,117 @@ TXT
 				2.Result - lines of text overlap (mobile only);
  17. Сделать Commit changes (сохранить) изменения на веб интерфейсе === нажать кнопку "Commit changes";
  18. Синхронизировать внешний и локальный репозиторий TXT === в GitBash ввести "git pull".
+
+
+JSON
+
+1.Создать внешний репозиторий c названием JSON ===   1)зайти в свой аккаунт GitHub;
+						     2)во вкладке "Repositories" нажать кнопку "New";
+    						     3)в строке "Repository name" написать "JSON";
+						     4)нажать кнопку "Create repository;
+2. Клонировать репозиторий JSON на локальный компьютер === в GitBash ввести "git clone" + URL созданного репозитория;
+3. Внутри локального JSON создать файл new.json  === 1)cd JSON;
+						     2)touch new.json;		],
+4. Добавить файл под гит === git add new.json;
+5. Закоммитить файл === git commit -m "new.json";
+6. Отправить файл на внешний GitHub репозиторий === git push;
+7. Отредактировать содержание файла “new.json” - написать информацию о себе (ФИО, возраст, количество домашних животных, будущая желаемая зарплата). Всё написать в формате JSON ===
+		1)vim new.json;
+		2)insert;
+		{
+			"surname":"Tagiev",
+			"name":"Samir",
+			"patronymic":"Nazimovich",
+		     	"age":35,
+		     	"pet":0,
+			"future_desired_salary":"1kk"
+		}
+		3)esc;
+		4):wq;	
+8. Отправить изменения на внешний репозиторий ===  1)git commit -am "editing";
+						   2)git push;
+9. Создать файл preferences.json === vim preferences.json;
+10. В файл preferences.json” добавить информацию о своих предпочтениях (Любимый фильм, любимый сериал, любимая еда, любимое время года, страна которую хотели бы посетить) в формате JSON ===
+		1)insert;
+		{
+	       	"favorite_movie":"Kin-dza-dza",
+		"favorite_serial":"Friends",
+		"favorite_meal":"meat",
+		"favorite_time_of_the_year":"Summer",
+		"the_country_I_would_like_to_visit":"New_Zealand"
+    		}
+	        3)esc;
+		4):wq;
+11. Создать файл skills.json добавить информацию о скиллах которые будут изучены на курсе в формате JSON ===
+		1)vim skills.json;
+		2)insert;
+		{
+		"1":"Basic theory (What is testing, bug reports, documentation, types, methods, testing areas, etc.) SDLC, STLC",
+	        "2":"What is a client-server architecture",
+		"3":"HTTP Methods of requests to the server",
+		"4":"HTTP server response codes",
+		"5":"Structures of HTTP requests and responses",
+		"6":"What is JSON, XML. Their structure",
+		"7":"API testing via Postman (JS, API autotests)",
+		"8":"Removing and reading logs from an external server",
+		"9":"Sniffing http web traffic via Charles and Fiddler",
+		"10":"Dev Tools of web browsers (Google Chrome, FireFox)",
+		"11":"VPN. (How it works, why you need it, how to use it, tool options)",
+		"12":"Mobile testing",
+		"13":"Feature iOS, Android, guidelines",
+		"14":"Building iOS applications on XCode. (Those who do not have a Mac computer, just look)",
+		"15":"Building Android applications on Android Studio",
+		"16":"ADB (android device management)",
+		"17":"Setting up proxy and vpn on iOS and Android",
+		"18":"Interception (sniffing) of mobile traffic via Charles and Fiddler on iOS and Android",
+		"19":"Command line (terminal) Linux (copying, creating, viewing, moving files on servers without a graphical interface)",
+		"20":"Basics of bash scripting, automation of routine tasks on the server",
+		"21":"Access to remote servers",
+		"22":"SQL basics (Create, Delete, Drop, Insert Into, Select, From, Where, Join)",
+		"23":"Postgres database (installation, configuration and use)",
+		"24":"Non-relational database Redis (installation, configuration and use)",
+		"25":"Load testing in Jmeter",
+		"26":"Scrum development methodology",
+		"27":"Python. (Learning the basics. Creating a client-server application)"		
+		}
+		3)esc;
+		4):wq;
+12. Сделать коммит в одну строку === git add . && git commit -m "add 2 files";
+13. Отправить сразу 2 файла на внешний репозиторий === git push;
+14. На веб интерфейсе создать файл bug_report.json === 1)зайти в свой аккаунт GitHub;
+						       2)во вкладке "Repositories" зайти в репозиторий "JSON";
+					       	       3)нажать кнопку "Add file";
+					               4)выбрать "Create new file";
+						       5)в окне "Name your file" написать "bug_report.json";
+ 15. Сделать Commit changes (сохранить) изменения на веб интерфейсе === нажать кнопку "Commit new file";
+ 16. На веб интерфейсе модифицировать файл bug_report.json, добавить баг репорт в формате JSON === 
+ 		1)зайти в файл bug_report.json",
+		2)нажать кнопку Edit this file":
+           	{
+		"Created Date":"18.02.2022",
+		"Author":"Tagiev S.N.",
+		"Project":"ksendzov.com",
+		"Summary":"lines of text overlap (mobile only)",
+		"Component":"course program points",
+		"Severity":"minor",
+		"Priority":"trivial",
+		"Status":"new",
+		"Incident Type":"bug",
+		"Category":"text",
+		"Environment":"Android version - 11;Chrome version - 97.0.4692.98",
+		"Description":
+			{
+			"1.Steps to reproduse":
+				[
+					"1.Open ksendzov.com",
+					"2.Go to point 26 of the course program"
+				],
+			"2.Result":"lines of text overlap (mobile only)"
+                	}
+           	}
+17. Сделать Commit changes (сохранить) изменения на веб интерфейсе === нажать кнопку "Commit changes";
+18. Синхронизировать внешний и локальный репозиторий JSON === в GitBash ввести "git pull".
+
+
+
+
