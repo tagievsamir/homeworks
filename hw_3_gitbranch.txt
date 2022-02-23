@@ -63,5 +63,5 @@ GitHub.Branches/ HW_3
 	2)репозиторий branches;
 	3)CheckLists had recent...;
 	4)Compare & Pull requests;
-10. Синхронизировать Внешнюю и Локальную ветки Main === 1)git checkout;
+10. Синхронизировать Внешнюю и Локальную ветки Main === 1)git checkout main;
 							2)git pull
