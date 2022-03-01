@@ -3,15 +3,15 @@ GitHub.Branches/ HW_3
 - Postman === git branch Postman
 - Jmeter === git branch Jmeter
 - CheckLists === git branch CheckLists
-- Bag Reports === git branch Bag_reports
+- Bug Reports === git branch Bug_reports
 - SQL === git branch SQL
 - Charles === git branch Charles
 - Mobile testing === git branch Mobile_testing
 
 2. Запушить все ветки на внешний репозиторий === git push origin --all
-3. В ветке Bag Reports сделать текстовый документ со структурой баг репорта ===
-=== 1)git checkout Bag_reports;
-    2)vim bag_rep.json
+3. В ветке Bug Reports сделать текстовый документ со структурой баг репорта ===
+=== 1)git checkout Bug_reports;
+    2)vim bug_rep.json
 		{
 		"Summary":"Короткое описание проблемы, явно указывающее на причину и тип ошибочной ситуации",
 		"Project":"Название тестируемого проекта",
@@ -45,8 +45,8 @@ GitHub.Branches/ HW_3
 		}
 
 4. Запушить структуру багрепорта на внешний репозиторий === git add . && git commit -m "struct" && git push
-5. Вмержить ветку Bag Reports в Main === 1)git checkout main;
-					 2)git merge Bag_reports;
+5. Вмержить ветку Bug Reports в Main === 1)git checkout main;
+					 2)git merge Bug_reports;
 6. Запушить main на внешний репозиторий === git push -u origin main;
 7. В ветке CheckLists набросать структуру чек листа === 
 === 1)git checkout CheckLists;
