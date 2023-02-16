@@ -1,0 +1,10 @@
+#!/bin/bash
+     mkdir qa
+     cd qa
+     mkdir f_1 f_2 f_3
+     cd f_1
+     touch 1.txt 2.txt 3.txt 4.json 5.json
+     mkdir f_4 f_5 f_6
+     ls -la
+     mv d:/qa/f_1/1.txt d:/qa/f_1/2.txt d:/qa/f_1/f_6/
+    
