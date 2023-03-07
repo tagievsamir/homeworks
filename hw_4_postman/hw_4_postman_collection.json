@@ -12,9 +12,12 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "{{ip_port}}get_method?name=Samir&age={{age}}",
+					"raw": "{{url}}/get_method?name=Samir&age={{age}}",
 					"host": [
-						"{{ip_port}}get_method"
+						"{{url}}"
+					],
+					"path": [
+						"get_method"
 					],
 					"query": [
 						{
@@ -37,7 +40,51 @@
 					"listen": "test",
 					"script": {
 						"exec": [
-							""
+							"let req_f = request.data;\r",
+							"let resp_f = pm.response.json();\r",
+							"let req_age = +req_f.age;\r",
+							"let resp_age = +resp_f.age;\r",
+							"let req_salary = req_f.salary;\r",
+							"let resp_salary_1_5_years = resp_f.family.u_salary_1_5_year;\r",
+							"let children_2_name = resp_f.family.children[1][0];\r",
+							"console.log(\"family \" +resp_f.family.children)\r",
+							"\r",
+							"pm.test(\"check_age\", function() {\r",
+							"    pm.expect(req_age).to.eql(resp_age)\r",
+							"});\r",
+							"\r",
+							"\r",
+							"pm.test(\"check_salary_1.5_year\", function () {\r",
+							"    pm.expect(req_salary*4).to.eql(resp_salary_1_5_years);\r",
+							"});\r",
+							"\r",
+							"pm.test(\"check_children_2_name\", function () {\r",
+							"    pm.expect(children_2_name).to.eql(\"Kate\");\r",
+							"});\r",
+							"\r",
+							"pm.test(\"name_type\", function () {\r",
+							"    pm.expect(resp_f.name).to.be.a(\"string\");\r",
+							"});\r",
+							"\r",
+							"pm.test(\"salary_type\", function () {\r",
+							"    pm.expect(resp_f.salary).to.be.a(\"number\");\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Have_family_property\", function () {\r",
+							"    pm.expect(resp_f).to.have.property(\"family\");\r",
+							"});\r",
+							"\r",
+							"pm.test(\"All_properties\", function () {\r",
+							"    pm.expect(resp_f).to.have.all.keys(\"age\",\"family\",\"name\",\"salary\");\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Inner_properties\", function () {\r",
+							"    pm.expect(resp_f.family).to.have.all.keys(\"children\", \"u_salary_1_5_year\");\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Inner_properties\", function () {\r",
+							"    pm.expect(resp_f.family).to.have.any.keys(\"children\",12);\r",
+							"});"
 						],
 						"type": "text/javascript"
 					}
@@ -67,9 +114,12 @@
 					]
 				},
 				"url": {
-					"raw": "{{ip_port}}user_info_3",
+					"raw": "{{url}}/user_info_3",
 					"host": [
-						"{{ip_port}}user_info_3"
+						"{{url}}"
+					],
+					"path": [
+						"user_info_3"
 					]
 				}
 			},
@@ -94,9 +144,12 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "{{ip_port}}object_info_1?name=Samir&age={{age}}&weight=80",
+					"raw": "{{url}}/object_info_1?name=Samir&age={{age}}&weight=80",
 					"host": [
-						"{{ip_port}}object_info_1"
+						"{{url}}"
+					],
+					"path": [
+						"object_info_1"
 					],
 					"query": [
 						{
@@ -122,9 +175,12 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "{{ip_port}}object_info_2?name=Samir&age={{age}}&salary=3000",
+					"raw": "{{url}}/object_info_2?name=Samir&age={{age}}&salary=3000",
 					"host": [
-						"{{ip_port}}object_info_2"
+						"{{url}}"
+					],
+					"path": [
+						"object_info_2"
 					],
 					"query": [
 						{
@@ -150,9 +206,12 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "{{ip_port}}object_info_3?name=Samir&age=35&salary=3000",
+					"raw": "{{url}}/object_info_3?name=Samir&age=36&salary=3000",
 					"host": [
-						"{{ip_port}}object_info_3"
+						"{{url}}"
+					],
+					"path": [
+						"object_info_3"
 					],
 					"query": [
 						{
@@ -161,7 +220,7 @@
 						},
 						{
 							"key": "age",
-							"value": "35"
+							"value": "36"
 						},
 						{
 							"key": "salary",
@@ -178,9 +237,12 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "{{ip_port}}object_info_4?name=Samir&age=35&salary=3000",
+					"raw": "{{url}}/object_info_4?name=Samir&age=36&salary=3000",
 					"host": [
-						"{{ip_port}}object_info_4"
+						"{{url}}"
+					],
+					"path": [
+						"object_info_4"
 					],
 					"query": [
 						{
@@ -189,7 +251,7 @@
 						},
 						{
 							"key": "age",
-							"value": "35"
+							"value": "36"
 						},
 						{
 							"key": "salary",
@@ -215,7 +277,7 @@
 						},
 						{
 							"key": "age",
-							"value": "35",
+							"value": "36",
 							"type": "text"
 						},
 						{
@@ -226,9 +288,62 @@
 					]
 				},
 				"url": {
-					"raw": "{{ip_port}}user_info_2",
+					"raw": "{{url}}/user_info_2",
 					"host": [
-						"{{ip_port}}user_info_2"
+						"{{url}}"
+					],
+					"path": [
+						"user_info_2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Login",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"var jsonData = pm.response.json();\r",
+							"var resp_token = jsonData.token;\r",
+							"\r",
+							"pm.environment.set(\"token\", resp_token);\r",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"auth": {
+					"type": "basic"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "login",
+							"value": "Samir",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "faraon",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{url}}/login",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"login"
 					]
 				}
 			},
@@ -258,4 +373,3 @@
 		}
 	]
 }
-
