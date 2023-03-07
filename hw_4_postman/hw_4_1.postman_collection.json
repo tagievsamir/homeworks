@@ -233,7 +233,7 @@
 							"pm.environment.set(\"salary\", +req.salary);\r",
 							"\r",
 							"let resp_salary = [resp.salary[0], resp.salary[1], resp.salary[2]];\r",
-							"for(let x = 0; x < 3; x = x + 1) {\r",
+							"for(let x = 0; x < resp_salary.length; x = x + 1) {\r",
 							"    console.log(+resp_salary[x]\r",
 							")}\r",
 							""
@@ -325,7 +325,7 @@
 							"    pm.expect(sal).to.eql(+req.salary*4.2)\r",
 							"});\r",
 							"let pers = (Object.keys(resp.person));\r",
-							"for(x = 0; x < 3; x = x + 1) {\r",
+							"for(let x = 0; x < pers.length; x++) {\r",
 							"    console.log(pers[x])\r",
 							"}"
 						],
