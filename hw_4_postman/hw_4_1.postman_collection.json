@@ -1,7 +1,7 @@
 {
 	"info": {
 		"_postman_id": "7d6d8238-4755-4153-84cd-8691deb00f2a",
-		"name": "hw_4.1",
+		"name": "hw_4_1",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
 		"_exporter_id": "19391947"
 	},
@@ -306,7 +306,28 @@
 							"});\r",
 							"pm.test(\"resp_sal_12_mon_eql_req*2.7\", function() {\r",
 							"    pm.expect(resp.qa_salary_after_12_months).to.eql(+req.salary*2.7)\r",
-							"})"
+							"});\r",
+							"pm.test(\"resp_sal_1.5_yrs_eql_req*3.3\", function() {\r",
+							"    pm.expect(resp[\"qa_salary_after_1.5_year\"]).to.eql(+req.salary*3.3)\r",
+							"});\r",
+							"pm.test(\"resp_sal_3.5_yrs_eql_req*3.8\", function() {\r",
+							"    pm.expect(resp[\"qa_salary_after_3.5_years\"]).to.eql(+req.salary*3.8)\r",
+							"});\r",
+							"let pers_sal = resp.person.u_name[1];\r",
+							"pm.test(\"pers_sal_eql_sal\", function() {\r",
+							"    pm.expect(pers_sal).to.eql(+req.salary)\r",
+							"});\r",
+							"pm.test(\"u_age_eql_req_age\", function() {\r",
+							"    pm.expect(resp.person.u_age).to.eql(+req.age)\r",
+							"});\r",
+							"pm.test(\"u_salary_5_years_eql_sal*4.2\", function() {\r",
+							"    var sal = resp.person.u_salary_5_years;\r",
+							"    pm.expect(sal).to.eql(+req.salary*4.2)\r",
+							"});\r",
+							"let pers = (Object.keys(resp.person));\r",
+							"for(x = 0; x < 3; x = x + 1) {\r",
+							"    console.log(pers[x])\r",
+							"}"
 						],
 						"type": "text/javascript"
 					}
