@@ -83,7 +83,7 @@ select * from students where created_on in ('2020-10-03 00:00:00', '2021-05-19 0
 select min(id) as minId from students;
 
 -- 29. Вывести максимальный id
-select min(id) as maxId from students;
+select max(id) as maxId from students;
 
 --  30. Вывести количество пользователей
 select count(id) from students;
