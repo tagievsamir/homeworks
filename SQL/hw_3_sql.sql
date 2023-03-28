@@ -1,12 +1,12 @@
 --1. Вывести всех работников чьи зарплаты есть в базе, вместе с зарплатами
-select employee_name, monthly_salary  from employees e 
-join employee_salary es on e.id = es.employee_id
+select employee_name, monthly_salary  from employees as e 
+join employee_salary as es on e.id = es.employee_id
 join salary on salary.id = es.salary_id;
 
 --2. Вывести всех работников у которых ЗП меньше 2000
-select employee_name, monthly_salary from employees e 
-join employee_salary es on e.id = es.employee_id
-join salary s  on s.id = es.salary_id 
+select employee_name from employees as e 
+join employee_salary as es on e.id = es.employee_id
+join salary as s  on s.id = es.salary_id 
 where s.monthly_salary < 2000;
 
 --3. Вывести все зарплатные позиции, но работник по ним не назначен. 
@@ -14,7 +14,7 @@ where s.monthly_salary < 2000;
 insert into salary(monthly_salary)
 values(2600);
 
-select  monthly_salary  from salary s left join employee_salary es on s.id = es.salary_id 
+select  monthly_salary  from salary as s left join employee_salary as es on s.id = es.salary_id 
 where es.employee_id is null ;
 
 select monthly_salary from salary where id not in (select salary_id from employee_salary);
