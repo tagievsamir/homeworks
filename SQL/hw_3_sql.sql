@@ -1,4 +1,3 @@
-
 --1. Вывести всех работников чьи зарплаты есть в базе, вместе с зарплатами
 select employee_name, monthly_salary  from employees e 
 join employee_salary es on e.id = es.employee_id
