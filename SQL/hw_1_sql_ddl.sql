@@ -305,5 +305,3 @@ values  (1,4),
 		(38,8),
 		(39,15),
 		(40,5);
-	  
-select * from roles_employee;
